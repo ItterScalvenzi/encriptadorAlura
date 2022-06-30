@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter" sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+}
+
+body {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  width: 100%;
+  height: 20%;
+}
+
+.icono {
+    height: 48px;
+    width: 620px;
+    display: flex;
+}
+  
+strong {
+    text-align: center;
+    margin-left: 300px;
+    font-size: 45px;
+    font-family: "Inter" sans-serif;
+}
+
+main {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+section {
+  width: 40%;
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.section1 {
+  width: 70%;
+}
+
+.input-text {
+  background-color: rgb(255, 255, 255, 0.5);
+  margin: auto;
+  margin-top: 90px;
+  margin-left: 20px;
+  font-display: inherit;
+  border-radius: 10px;
+  border: transparent;
+}
+
+.informacion {
+  text-align: start;
+  margin-left: 220px;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.contenedor-button {
+  text-align: center;
+  margin-top: 250px;
+}
+
+#encriptar {
+  width: 228px;
+  height: 67px;
+  background: #761f2f;
+  border-radius: 4px;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset,
+    0 1px 3px rgba(0, 0, 0, 0.2);
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(10%, #f90),
+    to(#e76a00)
+  );
+  background-image: linear-gradient(rgb(240, 95, 95) 10%, #eb4040 100%);
+  color: #ffffff;
+  border: 1px solid #880804;
+}
+
+#desencriptar {
+  box-sizing: border-box;
+  width: 228px;
+  height: 67px;
+  background: #77d29c;
+  color: #ffffff;
+  border: 1px solid #086d2f;
+  border-radius: 4px;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset,
+    0 1px 3px rgba(0, 0, 0, 0.2);
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(10%, #f90),
+    to(#e76a00)
+  );
+  background-image: linear-gradient(rgb(96, 226, 135) 10%, #2bbb56 100%);
+}
+
+.resultado-text {
+  position: relative;
+  margin-top: 20px;
+  margin-left: 90px;
+}
+
+.section2 {
+  width: 30%;
+  height: 70%;
+  background-color: rgb(255, 255, 255, 0.5);
+  border-radius: 20px;
+  margin-right: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.contenedor-munieco {
+  width: 100%;
+  height: 40%;
+}
+
+.contenedor-mensaje {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  color: #343a40;
+}
+
+.contenedor-ingresar {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: #495057;
+}
+
+.contenedor-resultado {
+  width: 100%;
+  height: 400px;
+  padding: 25px;
+  box-sizing: border-box;
+  display: none;
+  border-radius: 10px;
+}
+
+.texto-desencriptado {
+  background-color: transparent;
+  border: transparent;
+  margin: center;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-display: inherit;
+  display: block;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+}
+
+.contenedor-copiar {
+  width: 100%;
+  height: 120px;
+  display: none;
+}
+
+.btn-copiar {
+  width: 228px;
+  height: 67px;
+  background: #761f2f;
+  color: #ffffff;
+  border: 1px solid #03135c;
+  border-radius: 4px;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset,
+    0 1px 3px rgba(0, 0, 0, 0.2);
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(10%, #f90),
+    to(#e76a00)
+  );
+  background-image: linear-gradient(rgb(41, 119, 236) 10%, #2b2dbb 100%);
+  display: block;
+  margin: auto;
+  margin-top: 190px;
+}
+footer {
+  width: 100%;
+  height: 50px;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.ocultar {
+  display: none;
+}
+
+.fa-linkedin {
+  border-radius: 25px;
+  background: #007bb5;
+  color: white;
+}
+
+.fa-facebook {
+  border-radius: 25px;
+  background: #3b5998;
+  color: white;
+}
+
+.fa-instagram {
+  border-radius: 25px;
+  background: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  color: white;
+}
+
+.fa-github {
+  border-radius: 25px;
+  background: #3d118f;
+  color: white;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 40px;
+  width: 60px;
+  text-decoration: none;
+  margin: 5px 80px;
+}
