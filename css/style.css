@@ -75,20 +75,31 @@ img {
 }
 
 #encriptar {
-  width: 228px;
+  width: 250px;
   height: 67px;
   background: #1f499e;
-  border-radius: 4px;
+  border-radius: 10px;
   color: #ffffff;
+  border: 1px;
+}
+
+#encriptar:hover{
+  width: 260px;
+  height: 70px;
 }
 
 #desencriptar {
   box-sizing: border-box;
-  width: 228px;
+  width: 250px;
   height: 67px;
   background: #1f499e;
   color: #ffffff;
-  
+  border-radius: 10px;
+  border: 1px;
+}
+#desencriptar:hover{
+  width: 260px;
+  height: 70px;
 }
 
 .resultado-text {
@@ -165,7 +176,7 @@ img {
   background: #1f499e;
   color: #ffffff;
   border: 1px solid #03135c;
-  border-radius: 4px;
+  border-radius: 10px;
   display: block;
   margin: auto;
   margin-top: 190px;
