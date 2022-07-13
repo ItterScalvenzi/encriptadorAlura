@@ -71,13 +71,13 @@ img {
 
 .contenedor-button {
   text-align: center;
-  margin-top: 250px;
+  margin-top: 150px;
 }
 
 #encriptar {
   width: 250px;
   height: 67px;
-  background: #1f499e;
+  background: #302e8a;
   border-radius: 10px;
   color: #ffffff;
   border: 1px;
@@ -92,7 +92,7 @@ img {
   box-sizing: border-box;
   width: 250px;
   height: 67px;
-  background: #1f499e;
+  background: #302e8a;
   color: #ffffff;
   border-radius: 10px;
   border: 1px;
@@ -134,10 +134,10 @@ img {
 }
 
 .contenedor-ingresar {
-  font-family: "Inter";
+  /*font-family: "Inter";
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 18px;*/
   line-height: 150%;
   text-align: center;
   color: #495057;
@@ -171,15 +171,20 @@ img {
 }
 
 .btn-copiar {
-  width: 228px;
+  width: 250px;
   height: 67px;
-  background: #1f499e;
+  background: #302e8a;
   color: #ffffff;
   border: 1px solid #03135c;
   border-radius: 10px;
   display: block;
   margin: auto;
   margin-top: 190px;
+}
+
+.btn-copiar:hover{
+  width: 255px;
+  height: 72px;
 }
 
 footer {
