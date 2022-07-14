@@ -198,26 +198,40 @@ footer {
   display: none;
 }
 
-.copyrigth{
-  font-size: 10px;
-}
-
 .fa-linkedin {
   border-radius: 25px;
   background: #007bb5;
   color: white;
+  width: 60px;
+}
+
+.fa-linkedin:hover{
+  width: 65px;
 }
 
 .fa-github {
   border-radius: 25px;
   background: #3d118f;
   color: white;
+  width: 60px;
 }
+
+.fa-github:hover{
+  width: 65px;
+} 
 
 .fa {
   padding: 20px;
   font-size: 40px;
-  width: 60px;
   text-decoration: none;
   margin: 5px 80px;
+}
+
+.derechos{
+  padding-top: 20px;
+}
+
+.copyrigth{
+  margin-top: 50px;
+  font-size: 5px;
 }
