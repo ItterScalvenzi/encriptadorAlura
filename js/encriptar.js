@@ -1,3 +1,5 @@
+var ingreso = document.querySelector(".input-text");
+ingreso.focus();
 var botonEncriptar = document.querySelector("#encriptar");
 
 botonEncriptar.addEventListener("click", encriptar);
@@ -6,7 +8,8 @@ function encriptar() {
   var texto = document.querySelector(".input-text").value;
 
   if (texto.length != 0) {
-    if (validarMayusculasCaracteres(texto)) {
+    if (!validarMayusculasCaracteres(texto)) {
+      console.log(validarMayusculasCaracteres(texto));
       alert("No se permiten mayusculas ni carecteres especiales");
     }
 
@@ -35,11 +38,11 @@ function encriptar() {
       }
     }
     var munieco = document.querySelector(".contenedor-munieco");
-    munieco.style.display = "none";
+    munieco.classList.add("invisible");
     var contMensaje = document.querySelector(".contenedor-mensaje");
-    contMensaje.style.display = "none";
+    contMensaje.classList.add("invisible");
     var contIngresar = document.querySelector(".contenedor-ingresar");
-    contIngresar.style.display = "none";
+    contIngresar.classList.add("invisible");
     var contenedorResultado = document.querySelector(".contenedor-resultado");
     contenedorResultado.style.display = "visibility";
     contenedorResultado.style.display = "inherit";
@@ -55,6 +58,7 @@ function encriptar() {
 
   //funcion para validar que no tenga mayusculas ni caracteres especiales
   function validarMayusculasCaracteres(cadena) {
-    return /\s[^a-z]/.test(cadena);
+      var reg = /^[a-z\s]+$/;
+      return reg.test(cadena);
   }
 }
